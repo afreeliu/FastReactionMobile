@@ -20,7 +20,7 @@ class Greeter extends Component{
     render() {
         return (
             <div className="item" onClick={this.handleClick}>
-                {this.state.text + ": " + this.state.num}
+                {this.state.text + ": " + this.state.num + "->" + this.props.to}
             </div>
         );
     }
